@@ -165,7 +165,7 @@
                 type="rss" xmlUrl="http://mjg59.dreamwidth.org/data/rss" htmlUrl="http://mjg59.dreamwidth.org/"/>
             <outline text="Nicholas Nethercote"
                 title="Nicholas Nethercote" type="rss"
-                xmlUrl="http://blog.mozilla.com/nnethercote/feed/" htmlUrl="http://blog.mozilla.org/nnethercote"/>
+                xmlUrl="http://blog.mozilla.org/nnethercote/feed/" htmlUrl="http://blog.mozilla.org/nnethercote"/>
             <outline text="Project Hamster" title="Project Hamster"
                 type="rss"
                 xmlUrl="http://projecthamster.wordpress.com/feed/" htmlUrl="http://projecthamster.wordpress.com"/>
@@ -174,7 +174,7 @@
             <outline text="research!rsc" title="research!rsc" type="rss"
                 xmlUrl="http://research.swtch.com/feeds/posts/default" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fresearch.swtch.com%2Ffeeds%2Fposts%2Fdefault"/>
             <outline text="Taras' Blog" title="Taras' Blog" type="rss"
-                xmlUrl="http://blog.mozilla.com/tglek/feed/" htmlUrl="http://blog.mozilla.org/tglek"/>
+                xmlUrl="http://blog.mozilla.org/tglek/feed/" htmlUrl="http://blog.mozilla.org/tglek"/>
             <outline text="totes profesh" title="totes profesh"
                 type="rss" xmlUrl="http://www.garann.com/dev/feed/" htmlUrl="http://www.garann.com/dev"/>
             <outline text="xkcd" title="xkcd" type="rss"
@@ -213,7 +213,7 @@
                 xmlUrl="http://www.questionablecontent.net/QCRSS.xml" htmlUrl="http://www.questionablecontent.net"/>
             <outline text="See Mike Draw" title="See Mike Draw"
                 type="rss"
-                xmlUrl="http://seemikedraw.wordpress.com/feed/" htmlUrl="http://seemikedraw.com.au"/>
+                xmlUrl="http://seemikedraw.com.au/feed" htmlUrl="http://seemikedraw.com.au"/>
             <outline text="Sinfest" title="Sinfest" type="rss"
                 xmlUrl="http://henrik.nyh.se/scrapers/sinfest.rss" htmlUrl="http://www.sinfest.net"/>
             <outline text="Wormwood Saga - Daniel Lieske Blog"
@@ -251,7 +251,7 @@
                 type="rss" xmlUrl="http://revealingerrors.com/feed/atom" htmlUrl="http://revealingerrors.com/"/>
             <outline text="Shtetl-Optimized" title="Shtetl-Optimized"
                 type="rss"
-                xmlUrl="http://scottaaronson.com/blog/?feed=rss2" htmlUrl="http://www.scottaaronson.com/blog"/>
+                xmlUrl="http://www.scottaaronson.com/blog/?feed=rss2" htmlUrl="http://www.scottaaronson.com/blog"/>
             <outline text="sysadvent" title="sysadvent" type="rss"
                 xmlUrl="http://sysadvent.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://sysadvent.blogspot.com/"/>
             <outline text="The Endeavour" title="The Endeavour"
@@ -259,12 +259,12 @@
             <outline text="The Register - Odds and Sods: Verity Stob"
                 title="The Register - Odds and Sods: Verity Stob"
                 type="rss"
-                xmlUrl="http://www.theregister.co.uk/odds/stob/headlines.atom" htmlUrl="http://www.theregister.co.uk/software/stob/"/>
+                xmlUrl="http://www.theregister.co.uk/softwae/stob/headlines.atom" htmlUrl="http://www.theregister.co.uk/software/stob/"/>
             <outline text="Thoughts on Systems"
                 title="Thoughts on Systems" type="rss"
                 xmlUrl="http://feeds.feedburner.com/EmilSitMainBlog" htmlUrl="http://www.emilsit.net/"/>
             <outline text="ubuntu.lt" title="ubuntu.lt" type="rss"
-                xmlUrl="http://www.ubuntu.lt/rss.xml" htmlUrl="http://www.ubuntu.lt"/>
+                xmlUrl="http://feeds.feedburner.com/ubuntultnews" htmlUrl="http://www.ubuntu.lt"/>
             <outline text="UsabilityPost" title="UsabilityPost"
                 type="rss"
                 xmlUrl="http://feeds.feedburner.com/usabilitypost" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2Fusabilitypost"/>
