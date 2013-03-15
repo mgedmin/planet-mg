@@ -12,7 +12,7 @@ Usage::
     cd ~/src/planet-mg
     make
     crontab -e
-      @hourly make -C $HOME/src/planet-mg update-cron
+      @hourly cd $HOME/src/planet-mg && make update-cron
 
 Now expose ~/src/planet-mg/output to the web, e.g. using Apache's ::
 
