@@ -137,42 +137,42 @@ h2 {
     padding: 4px;
     margin-right: -10px;
 }
-h3.mg {
+h3.notes-from-mg {
     color: white;
     background-color: #134d73;
     border: 1px solid #134d73;
 }
-h3.python {
+h3.planet-python {
     color: white;
     background-color: #6dab24;
     border: 1px solid #00b000;
 }
-h3.debian {
+h3.planet-debian {
     color: white;
     background-color: #d70751;
     border: 1px solid #b00000;
 }
-h3.ubuntu {
+h3.planet-ubuntu {
     color: white;
     background-color: #996b0a;
     border: 1px solid #2e2003;
 }
-h3.gnome {
+h3.planet-gnome {
     color: white;
     background-color: #9db8d2;
     border: 1px solid #5080b0;
 }
-h3.freedesktop {
+h3.planet-freedesktop {
     color: white;
     background-color: #3b80ae;
     border: 1px solid #000050;
 }
-h3.schooltool {
+h3.planet-schooltool {
     color: white;
     background-color: #818144;
     border: 1px solid #404022;
 }
-h3.maemo {
+h3.planet-maemo {
     color: white;
     background-color: #d29d9d;
     border: 1px solid #683b3b;
@@ -182,46 +182,47 @@ h4 {
     padding: 4px;
     background: #eeeeee;
 }
-h4.mg {
+h4.notes-from-mg {
     background-color: white;
     border: 1px solid #134d73;
     color: #134d73;
 }
-h4.python {
+h4.planet-python {
     background-color: #e1e7d9;
     border: 1px solid #00b000;
     color: #008000;
 }
-h4.debian {
+h4.planet-debian {
     background-color: #ebd6de;
     border: 1px solid #b00000;
     color: #800000;
 }
-h4.ubuntu {
+h4.planet-ubuntu {
     background-color: #dbba75;
     border: 1px solid #2e2003;
     color: #2e2003;
 }
-h4.gnome {
+h4.planet-gnome {
     background-color: #e5e8eb;
     border: 1px solid #5080b0;
     color: #284080;
 }
-h4.freedesktop {
+h4.planet-freedesktop {
     background-color: #dce3e7;
     border: 1px solid #000050;
     color: #000050;
 }
-h4.schooltool {
+h4.planet-schooltool {
     background-color: #f1f1e4;
     border: 1px solid #818144;
     color: #818144;
 }
-h4.maemo {
+h4.planet-maemo {
     background-color: #f1f1e4;
     border: 1px solid #ffc9c9;
     color: #d29d9d;
 }
+
 a.title:hover, a.title:active,
 a.channel:hover, a.channel:active {
     text-decoration: none;
