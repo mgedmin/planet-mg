@@ -235,7 +235,7 @@
                 xmlUrl="http://www.commonsense.lt/feed/" htmlUrl="http://www.commonsense.lt"/>
             <outline text="Damn Interesting" title="Damn Interesting"
                 type="rss"
-                xmlUrl="http://www.damninteresting.com/?feed=rss2" htmlUrl="http://www.damninteresting.com"/>
+                xmlUrl="http://feeds.feedburner.com/damninteresting/all/" htmlUrl="http://www.damninteresting.com"/>
             <outline text="Exploration Through Example"
                 title="Exploration Through Example" type="rss"
                 xmlUrl="http://www.exampler.com/blog/feed/" htmlUrl="http://www.exampler.com/blog"/>
