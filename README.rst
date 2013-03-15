@@ -7,6 +7,7 @@ attempt to resurrect that old solution.
 
 Usage::
 
+    sudo apt-get install xsltproc
     git clone https://github.com/mgedmin/planet-mg ~/src/planet-mg
     cd ~/src/planet-mg
     make
