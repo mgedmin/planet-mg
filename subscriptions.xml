@@ -259,7 +259,7 @@
             <outline text="The Register - Odds and Sods: Verity Stob"
                 title="The Register - Odds and Sods: Verity Stob"
                 type="rss"
-                xmlUrl="http://www.theregister.co.uk/softwae/stob/headlines.atom" htmlUrl="http://www.theregister.co.uk/software/stob/"/>
+                xmlUrl="http://www.theregister.co.uk/software/stob/headlines.atom" htmlUrl="http://www.theregister.co.uk/software/stob/"/>
             <outline text="Thoughts on Systems"
                 title="Thoughts on Systems" type="rss"
                 xmlUrl="http://feeds.feedburner.com/EmilSitMainBlog" htmlUrl="http://www.emilsit.net/"/>
