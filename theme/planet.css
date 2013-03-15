@@ -27,6 +27,10 @@ h1 {
 	color: grey;
 }
 
+.admin {
+	text-align: right;
+}
+
 h2 {
 	font-family: "Bitstream Vera Sans", sans-serif;
 	font-weight: normal;
@@ -43,7 +47,7 @@ h3 {
 	border: 1px solid #5080b0;
 
 	padding: 4px;
-	margin-left: -10px;
+	margin-left: -10px;         /* added by mg */
 }
 
 h3 a {
@@ -64,17 +68,17 @@ h4 a {
 img.face {
 	float: right;
 /*	margin-top: -3em; */
-	margin-left: 2ex;
-	margin-bottom: 2ex;
+	margin-left: 2ex;           /* added by mg */
+	margin-bottom: 2ex;         /* added by mg */
 }
 
-.entrygroup > .date {
-	font-family: "Bitstream Vera Sans", sans-serif;
+.entry > .date {
+/*	font-family: "Bitstream Vera Sans", sans-serif; */
 	color: grey;
-	margin-bottom: 1em;
+	margin-bottom: 1em;         /* added by mg */
 }
 
-.entrygroup > .date a {
+.entry > .date a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -106,14 +110,26 @@ img.face {
 }
 
 .sidebar ul {
-	padding-left: 2em;
+	padding-left: 1em;
 	margin-left: 0px;
 
-	list-style-type: square;
+	list-style-type: none;
 }
 
 .sidebar ul li:hover {
 	color: grey;
+}
+
+.sidebar ul li a {
+        text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+        text-decoration: underline;
+}
+
+.sidebar ul li a img {
+        border: 0;
 }
 
 .sidebar p {
@@ -124,7 +140,23 @@ img.face {
 	padding-left: 5px;
 }
 
+.sidebar .message {
+/*  cursor: help; */
+/*  border-bottom: 1px dashed red; */
+    color: #7777ee;
+}
+
+/*
+.sidebar a.message:hover {
+    cursor: help;
+	background-color: #ff0000;
+	color: #ffffff !important;
+	text-decoration: none !important;
+}*/
+
 a:hover {
+/*	text-decoration: underline !important;
+	color: blue !important; */
 	text-decoration: underline;
 	color: blue;
 }
@@ -137,92 +169,11 @@ h2 {
     padding: 4px;
     margin-right: -10px;
 }
-h3.notes-from-mg {
-    color: white;
-    background-color: #134d73;
-    border: 1px solid #134d73;
-}
-h3.planet-python {
-    color: white;
-    background-color: #6dab24;
-    border: 1px solid #00b000;
-}
-h3.planet-debian {
-    color: white;
-    background-color: #d70751;
-    border: 1px solid #b00000;
-}
-h3.planet-ubuntu {
-    color: white;
-    background-color: #996b0a;
-    border: 1px solid #2e2003;
-}
-h3.planet-gnome {
-    color: white;
-    background-color: #9db8d2;
-    border: 1px solid #5080b0;
-}
-h3.planet-freedesktop {
-    color: white;
-    background-color: #3b80ae;
-    border: 1px solid #000050;
-}
-h3.planet-schooltool {
-    color: white;
-    background-color: #818144;
-    border: 1px solid #404022;
-}
-h3.planet-maemo {
-    color: white;
-    background-color: #d29d9d;
-    border: 1px solid #683b3b;
-}
 h4 {
     border: 1px solid gray;
     padding: 4px;
     background: #eeeeee;
 }
-h4.notes-from-mg {
-    background-color: white;
-    border: 1px solid #134d73;
-    color: #134d73;
-}
-h4.planet-python {
-    background-color: #e1e7d9;
-    border: 1px solid #00b000;
-    color: #008000;
-}
-h4.planet-debian {
-    background-color: #ebd6de;
-    border: 1px solid #b00000;
-    color: #800000;
-}
-h4.planet-ubuntu {
-    background-color: #dbba75;
-    border: 1px solid #2e2003;
-    color: #2e2003;
-}
-h4.planet-gnome {
-    background-color: #e5e8eb;
-    border: 1px solid #5080b0;
-    color: #284080;
-}
-h4.planet-freedesktop {
-    background-color: #dce3e7;
-    border: 1px solid #000050;
-    color: #000050;
-}
-h4.planet-schooltool {
-    background-color: #f1f1e4;
-    border: 1px solid #818144;
-    color: #818144;
-}
-h4.planet-maemo {
-    background-color: #f1f1e4;
-    border: 1px solid #ffc9c9;
-    color: #d29d9d;
-}
-
 a.title:hover, a.title:active,
 a.channel:hover, a.channel:active {
     text-decoration: none;
@@ -232,7 +183,6 @@ p.date {
     clear: both;
     margin-left: 20px;
 }
-
 .sidebar h2 {
     border: none;
     margin-right: 0;
@@ -263,6 +213,98 @@ p.date {
 }
 .entry h4 {
     font-size: 100%;
+}
+
+/* Custom feed colors */
+
+h3.mgedmin-and-friends,
+h3.notes-from-mg {
+    color: white;
+    background-color: #134d73;
+    border: 1px solid #134d73;
+}
+h4.mgedmin-and-friends,
+h4.notes-from-mg {
+    background-color: white;
+    border: 1px solid #134d73;
+    color: #134d73;
+}
+
+h3.planet-python {
+    color: white;
+    background-color: #6dab24;
+    border: 1px solid #00b000;
+}
+h4.planet-python {
+    background-color: #e1e7d9;
+    border: 1px solid #00b000;
+    color: #008000;
+}
+
+h3.planet-debian {
+    color: white;
+    background-color: #d70751;
+    border: 1px solid #b00000;
+}
+h4.planet-debian {
+    background-color: #ebd6de;
+    border: 1px solid #b00000;
+    color: #800000;
+}
+
+h3.planet-ubuntu {
+    color: white;
+    background-color: #996b0a;
+    border: 1px solid #2e2003;
+}
+h4.planet-ubuntu {
+    background-color: #dbba75;
+    border: 1px solid #2e2003;
+    color: #2e2003;
+}
+
+h3.planet-gnome {
+    color: white;
+    background-color: #9db8d2;
+    border: 1px solid #5080b0;
+}
+h4.planet-gnome {
+    background-color: #e5e8eb;
+    border: 1px solid #5080b0;
+    color: #284080;
+}
+
+h3.planet-freedesktop {
+    color: white;
+    background-color: #3b80ae;
+    border: 1px solid #000050;
+}
+h4.planet-freedesktop {
+    background-color: #dce3e7;
+    border: 1px solid #000050;
+    color: #000050;
+}
+
+h3.planet-schooltool {
+    color: white;
+    background-color: #818144;
+    border: 1px solid #404022;
+}
+h4.planet-schooltool {
+    background-color: #f1f1e4;
+    border: 1px solid #818144;
+    color: #818144;
+}
+
+h3.planet-maemo {
+    color: white;
+    background-color: #d29d9d;
+    border: 1px solid #683b3b;
+}
+h4.planet-maemo {
+    background-color: #f1f1e4;
+    border: 1px solid #ffc9c9;
+    color: #d29d9d;
 }
 
 /* Javascript magic */
