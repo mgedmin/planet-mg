@@ -28,8 +28,9 @@
             title="Dave Jones' recollection of stuff that happened."
             type="rss"
             xmlUrl="http://kernelslacker.livejournal.com/data/atom" htmlUrl="http://kernelslacker.livejournal.com/"/>
+        <!-- infosuicide
         <outline text="dive into mark" title="dive into mark" type="rss"
-            xmlUrl="http://feeds.feedburner.com/diveintomark/all" htmlUrl="http://diveintomark.org/"/>
+            xmlUrl="http://feeds.feedburner.com/diveintomark/all" htmlUrl="http://diveintomark.org/"/> -->
         <outline text="Domas Monkus" title="Domas Monkus" type="rss"
             xmlUrl="http://domas.monkus.lt/rss.xml" htmlUrl="http://domas.monkus.lt/"/>
         <outline text="Google Blog Search: link:mg.pov.lt"
@@ -43,8 +44,9 @@
         <outline text="Jacob Kaplan-Moss - Writing"
             title="Jacob Kaplan-Moss - Writing" type="rss"
             xmlUrl="http://jacobian.org/feed/" htmlUrl="http://www.jacobian.org/writing/"/>
+        <!-- timeout
         <outline text="Jaro kreivas blogas" title="Jaro kreivas blogas"
-            type="rss" xmlUrl="http://jaro.lt/blog-1/RSS" htmlUrl="http://jaro.lt"/>
+            type="rss" xmlUrl="http://jaro.lt/blog-1/RSS" htmlUrl="http://jaro.lt"/> -->
         <outline text="Jim Fulton" title="Jim Fulton" type="rss"
             xmlUrl="http://j1mfulton.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://j1mfulton.blogspot.com/"/>
         <outline text="Kernel Fun" title="Kernel Fun" type="rss"
@@ -63,8 +65,9 @@
             type="rss" xmlUrl="http://lwn.net/headlines/428584/" htmlUrl="http://lwn.net/Articles/428584/"/>
         <outline text="N9 Developer" title="N9 Developer" type="rss"
             xmlUrl="http://www.developer.nokia.com/Community/Blogs/rss.php?blogId=300169&amp;profile=atom" htmlUrl="http://www.developer.nokia.com/Community/Blogs/blog/n9-developer"/>
+        <!-- I don't even remember what it used to be, but it's not any more
         <outline text="neologasm" title="neologasm" type="rss"
-            xmlUrl="http://neologasm.org/atom.xml" htmlUrl="http://neologasm.org/"/>
+            xmlUrl="http://neologasm.org/atom.xml" htmlUrl="http://neologasm.org/"/> -->
         <outline text="Open Source Fact Check"
             title="Open Source Fact Check" type="rss"
             xmlUrl="http://open-source-facts.blogspot.com/feeds/posts/default" htmlUrl="http://open-source-facts.blogspot.com/"/>
@@ -92,6 +95,7 @@
         <outline text="Transcendental Technical Travails"
             title="Transcendental Technical Travails" type="rss"
             xmlUrl="http://www.canonware.com/~ttt/rss.xml" htmlUrl="http://www.canonware.com/~ttt/"/>
+        <!-- 404
         <outline text="Twitter / KimikoRoss"
             title="Twitter / KimikoRoss" type="rss"
             xmlUrl="http://twitter.com/statuses/user_timeline/35617784.rss" htmlUrl="http://twitter.com/KimikoRoss"/>
@@ -100,7 +104,7 @@
             xmlUrl="http://twitter.com/statuses/user_timeline/3094911.rss" htmlUrl="http://twitter.com/Othar"/>
         <outline text="Twitter / vcotwdorso"
             title="Twitter / vcotwdorso" type="rss"
-            xmlUrl="http://twitter.com/statuses/user_timeline/32378536.rss" htmlUrl="http://twitter.com/vcotwdorso"/>
+            xmlUrl="http://twitter.com/statuses/user_timeline/32378536.rss" htmlUrl="http://twitter.com/vcotwdorso"/> -->
         <outline text="Vi Hart" title="Vi Hart" type="rss"
             xmlUrl="http://vihart.com/blog/rss.xml" htmlUrl="http://vihart.com/"/>
         <outline text="visophyte: shiny? shiny."
@@ -193,7 +197,7 @@
         </outline>
         <outline title="Comics" text="Comics">
             <outline text="Chaos Life" title="Chaos Life" type="rss"
-                xmlUrl="http://chaoslife.findchaos.com/?feed=rss2" htmlUrl="http://chaoslife.findchaos.com"/>
+                xmlUrl="http://chaoslife.findchaos.com/feed" htmlUrl="http://chaoslife.findchaos.com"/>
             <outline text="Dresden Codak" title="Dresden Codak"
                 type="rss"
                 xmlUrl="http://feeds2.feedburner.com/rsspect/fJur" htmlUrl="http://dresdencodak.com"/>
@@ -268,6 +272,7 @@
                 type="rss"
                 xmlUrl="http://feeds.feedburner.com/hans-eric" htmlUrl="http://www.hans-eric.com"/>
         </outline>
+        <!-- 404
         <outline title="Facebook" text="Facebook">
             <outline
                 text="Marius Gedminas Draugų &quot;Facebook'o&quot; Pastabos"
@@ -279,7 +284,7 @@
                 title="Marius Gedminas's Friends' Facebook Status Updates"
                 type="rss"
                 xmlUrl="http://www.facebook.com/feeds/friends_status.php?id=719187728&amp;key=25a2be337b&amp;format=rss20" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.facebook.com%2Ffeeds%2Ffriends_status.php%3Fid%3D719187728%26key%3D25a2be337b%26format%3Drss20"/>
-        </outline>
+        </outline> -->
         <outline title="News" text="News">
             <outline text="KernelTrap - Kernel news"
                 title="KernelTrap - Kernel news" type="rss"
@@ -291,9 +296,10 @@
             <outline text="Everybody loves Eric Raymond"
                 title="Everybody loves Eric Raymond" type="rss"
                 xmlUrl="http://geekz.co.uk/lovesraymond/feed/atom" htmlUrl="http://geekz.co.uk/lovesraymond"/>
+            <!-- 404
             <outline text="Iz funni cats!" title="Iz funni cats!"
                 type="rss"
-                xmlUrl="http://lolzkittiez.blogspot.com/feeds/posts/default" htmlUrl="http://lolzkittiez.blogspot.com/"/>
+                xmlUrl="http://lolzkittiez.blogspot.com/feeds/posts/default" htmlUrl="http://lolzkittiez.blogspot.com/"/> -->
             <outline text="Laimikis" title="Laimikis" type="rss"
                 xmlUrl="http://laimikis.wordpress.com/feed/" htmlUrl="http://laimikis.wordpress.com"/>
             <outline text="Meme Cats" title="Meme Cats" type="rss"
