@@ -1,3 +1,3 @@
 #!/bin/sh
-test -d .env || make .env
+test -d .env && test -f venus/planet.py || make
 .env/bin/python venus/planet.py "$@"
