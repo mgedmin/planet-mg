@@ -271,35 +271,34 @@ div.current > h4 {
 }
 
 div.entrygroup > h4 {
-    background-image: url("open.png");
+    background-image: url("images/open.png");
     background-repeat: no-repeat;
     background-position: 100% 49%;
     padding-right: 32px;
 }
 div.entrygroup > h4:hover {
-    background-image: url("open-hi.png");
+    background-image: url("images/open-hi.png");
 }
 
 div.collapse h4 {
-    background-image: url("closed.png");
+    background-image: url("images/closed.png");
 }
 div.collapse h4:hover {
-    background-image: url("closed-hi.png");
+    background-image: url("images/closed-hi.png");
 }
 
-.collapse div.entry,
-.collapse p.date {
+.collapse div.entry {
     display: none;
 }
 
-div.entrygroup > p.date {
-    background-image: url("close.png");
+div.entry > p.date {
+    background-image: url("images/close.png");
     background-repeat: no-repeat;
     background-position: 100% 50%;
     padding: 4px 32px 4px 0;
     min-height: 20px;
     border-right: 1px solid #fff;
 }
-div.entrygroup > p.date:hover {
-    background-image: url("close-hi.png");
+div.entry > p.date:hover {
+    background-image: url("images/close-hi.png");
 }

@@ -73,10 +73,12 @@
 ### Comment extra fields are 'author' and 'category' which we
 ### demonstrate below.
 
-<p class="date" onclick="javascript:toggleAndShow(this.parentNode)">
+<p class="date" onclick="javascript:toggleAndShow(this.parentNode.parentNode)">
 <a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF author>by <TMPL_VAR author ESCAPE="HTML"> at </TMPL_IF><span class="date"><TMPL_VAR date></span><TMPL_IF category> under <TMPL_VAR category></TMPL_IF></a>
 </p>
+### End <div class="entry">
 </div>
+### End <div class="entrygroup">
 </div>
 
 <TMPL_IF __LAST__>
