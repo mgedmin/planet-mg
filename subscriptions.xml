@@ -184,7 +184,7 @@
             <outline text="Planet Debian" title="Planet Debian"
                 type="rss" xmlUrl="http://planet.debian.org/rss10.xml" htmlUrl="http://planet.debian.org/"/>
             <outline text="Planet GNOME" title="Planet GNOME" type="rss"
-                xmlUrl="http://planet.gnome.org/rss20.xml" htmlUrl="https://planet.gnome.org/"/>
+                xmlUrl="https://planet.gnome.org/rss20.xml" htmlUrl="https://planet.gnome.org/"/>
             <outline text="Planet Maemo" title="Planet Maemo" type="rss"
                 xmlUrl="http://maemo.org/news/planet-maemo/rss.xml" htmlUrl="http://maemo.org/news/planet-maemo/"/>
             <outline text="Planet Python" title="Planet Python"
