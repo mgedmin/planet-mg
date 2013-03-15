@@ -17,6 +17,12 @@ update-offline: .env log
 	.env/bin/python venus/planet.py -o config.ini 2>&1 | tee -a log/update.log
 	@printf '~~~ %s offline update done\n\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 
+.PHONY: update-cron
+update-cron: .env log
+	@printf '\n\n--- %s cron update started\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
+	@.env/bin/python venus/planet.py config.ini >> log/update.log 2>&1
+	@printf '~~~ %s cron update done\n\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
+
 # Implementation
 
 .env:
