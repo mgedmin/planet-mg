@@ -91,7 +91,15 @@
 
 
 <div class="sidebar">
-<img src="images/logo.png" width="136" height="136" alt="a picture of me">
+<img class="logo" src="images/logo.png" width="136" height="136" alt="a picture of me">
+
+<p>
+<strong>Last updated:</strong><br>
+<span class="date"><TMPL_VAR date></span><br>
+<em class="tz-notice">All times are UTC, unless specified otherwise.</em>
+</p>
+
+<p></p>
 
 <h2>Subscriptions</h2>
 <ul>
@@ -102,16 +110,8 @@
 </TMPL_LOOP>
 </ul>
 
-<p>
-<strong>Last updated:</strong><br>
-<span class="date"><TMPL_VAR date></span><br>
-<em>All times are UTC, unless specified otherwise.</em><br>
-<br>
-Powered by:<br>
-<a href="http://intertwingly.net/code/venus/"><img src="images/planet.png" width="80" height="15" alt="Planet" border="0"></a>
-</p>
+<p></p>
 
-<p>
 <h2>Planetarium:</h2>
 <ul>
 <li><a href="http://www.planetapache.org/">Planet Apache</a></li>
@@ -124,7 +124,12 @@ Powered by:<br>
 <li><a href="http://planet.mozilla.org/">Planet Mozilla</a></li>
 <li><a href="http://www.planetplanet.org/">more...</a></li>
 </ul>
+
+<p>
+Powered by<br>
+<a href="http://intertwingly.net/code/venus/"><img src="images/planet.png" width="80" height="15" alt="Planet" border="0"></a>
 </p>
+
 </div>
 </body>
 

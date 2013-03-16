@@ -100,18 +100,25 @@ img.face {
 	font-size: 85%;
 }
 
+.sidebar .logo {
+        margin-left: 1em;
+}
+
 .sidebar h2 {
 	font-size: 110%;
 	font-weight: bold;
 	color: black;
 
-	padding-left: 5px;
+	padding-left: 1em;
 	margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 1ex;
 }
 
 .sidebar ul {
 	padding-left: 1em;
 	margin-left: 0px;
+        margin-top: 1ex;
 
 	list-style-type: none;
 }
@@ -134,10 +141,10 @@ img.face {
 
 .sidebar p {
 	border-top: 1px solid grey;
-	margin-top: 30px;
-	padding-top: 10px;
-
-	padding-left: 5px;
+	margin-top: 1.5em;
+        margin-bottom: 0;
+	padding-top: 1em;
+	padding-left: 1em;
 }
 
 .sidebar .message {
