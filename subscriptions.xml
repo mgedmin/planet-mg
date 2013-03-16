@@ -172,7 +172,7 @@
             <outline text="Random ASCII" title="Random ASCII" type="rss"
                 xmlUrl="http://randomascii.wordpress.com/feed/" htmlUrl="http://randomascii.wordpress.com"/>
             <outline text="research!rsc" title="research!rsc" type="rss"
-                xmlUrl="http://research.swtch.com/feeds/posts/default" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fresearch.swtch.com%2Ffeeds%2Fposts%2Fdefault"/>
+                xmlUrl="http://research.swtch.com/feeds/posts/default" htmlUrl="http://research.swtch.com/"/>
             <outline text="Taras' Blog" title="Taras' Blog" type="rss"
                 xmlUrl="http://blog.mozilla.org/tglek/feed/" htmlUrl="http://blog.mozilla.org/tglek"/>
             <outline text="totes profesh" title="totes profesh"
@@ -267,24 +267,11 @@
                 xmlUrl="http://feeds.feedburner.com/ubuntultnews" htmlUrl="http://www.ubuntu.lt"/>
             <outline text="UsabilityPost" title="UsabilityPost"
                 type="rss"
-                xmlUrl="http://feeds.feedburner.com/usabilitypost" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2Fusabilitypost"/>
+                xmlUrl="http://feeds.feedburner.com/usabilitypost" htmlUrl="http://www.usabilitypost.com/"/>
             <outline text="www.hans-eric.com" title="www.hans-eric.com"
                 type="rss"
                 xmlUrl="http://feeds.feedburner.com/hans-eric" htmlUrl="http://www.hans-eric.com"/>
         </outline>
-        <!-- 404
-        <outline title="Facebook" text="Facebook">
-            <outline
-                text="Marius Gedminas Draugų &quot;Facebook'o&quot; Pastabos"
-                title="Marius Gedminas Draugų &quot;Facebook'o&quot; Pastabos"
-                type="rss"
-                xmlUrl="http://www.facebook.com/feeds/friends_notes.php?id=719187728&amp;key=25a2be337b&amp;format=rss20" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.facebook.com%2Ffeeds%2Ffriends_notes.php%3Fid%3D719187728%26key%3D25a2be337b%26format%3Drss20"/>
-            <outline
-                text="Marius Gedminas's Friends' Facebook Status Updates"
-                title="Marius Gedminas's Friends' Facebook Status Updates"
-                type="rss"
-                xmlUrl="http://www.facebook.com/feeds/friends_status.php?id=719187728&amp;key=25a2be337b&amp;format=rss20" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.facebook.com%2Ffeeds%2Ffriends_status.php%3Fid%3D719187728%26key%3D25a2be337b%26format%3Drss20"/>
-        </outline> -->
         <outline title="News" text="News">
             <outline text="KernelTrap - Kernel news"
                 title="KernelTrap - Kernel news" type="rss"
