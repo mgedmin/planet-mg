@@ -267,7 +267,7 @@ function queueSaveCookie() {
         return;
     }
     g_save_queued = true;
-    window.setTimeout("performQueuedSaveCookie()", 5000);
+    window.setTimeout(performQueuedSaveCookie, 5000);
 }
 
 function performQueuedSaveCookie() {
@@ -495,7 +495,7 @@ function initialUpdate() {
     updateStats();
     /* Repeat this every second until the document is fully loaded. */
     if (!g_finished_loading) {
-        window.setTimeout("initialUpdate()", 1000);
+        window.setTimeout(initialUpdate, 1000);
     }
 }
 
@@ -524,4 +524,4 @@ g_initial_collapsed = loadCookie();
 window.onload = onLoadHook;
 window.onunload = onUnloadHook;
 document.onkeypress = onKeyPress;
-window.setTimeout("initialUpdate()", 1000);
+window.setTimeout(initialUpdate, 1000);
