@@ -491,6 +491,13 @@ function initialUpdate() {
     g_prev_entries = entries;
     /* Convert times to local time zone. */
     convertTimesToLocal();
+    if (document.getElementsByClassName) {
+        var elements = document.getElementsByClassName("tz-notice");
+        for (var i = 0; i < elements.length; i++) {
+            var e = elements[i];
+            e.style.display = 'none';
+        }
+    }
     /* Keep running stats of total/new posts. */
     updateStats();
     /* Repeat this every second until the document is fully loaded. */
