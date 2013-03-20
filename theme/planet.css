@@ -77,6 +77,14 @@ img.face {
         height: auto;               /* added by mg */
 }
 
+.entry pre {
+        max-width: 100%;            /* added by mg */
+/* choose: either scrollbar: */
+/*      overflow: auto; */          /* added by mg */
+/* or wrapping: */
+        white-space: pre-wrap;      /* added by mg */
+}
+
 .entry > .date {
 /*	font-family: "Bitstream Vera Sans", sans-serif; */
 	color: grey;
