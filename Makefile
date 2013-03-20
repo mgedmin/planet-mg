@@ -21,6 +21,8 @@ update-offline: .env cache log venus/planet.py
 update-cron: .env cache log venus/planet.py
 	@git pull -q
 	@printf '\n\n--- %s cron update started\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
+	@savelog -l -q -c 168 output/atom.xml >> log/update.log 2>&1
+	@cp output/atom.xml.0 output/atom.xml >> log/update.log 2>&1
 	@savelog -l -q -c 168 output/index.html >> log/update.log 2>&1
 	@cp output/index.html.0 output/index.html >> log/update.log 2>&1
 	@.env/bin/python venus/planet.py config.ini >> log/update.log 2>&1
