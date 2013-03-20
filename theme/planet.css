@@ -72,6 +72,11 @@ img.face {
 	margin-bottom: 2ex;         /* added by mg */
 }
 
+.entry img {
+        max-width: 100%;            /* added by mg */
+        height: auto;               /* added by mg */
+}
+
 .entry > .date {
 /*	font-family: "Bitstream Vera Sans", sans-serif; */
 	color: grey;
