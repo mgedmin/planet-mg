@@ -14,7 +14,8 @@ Usage::
     crontab -e
       @hourly cd $HOME/src/planet-mg && make update-cron
 
-Now expose ``~/src/planet-mg/output`` to the web, e.g. using Apache's ::
+Now expose ``~/src/planet-mg/output`` to the web, e.g. using Apache ::
 
-    Alias /planet /home/mg/src/planet-mg/output/
+    ScriptAlias /planet/add /home/mg/src/planet-mg/cgi-bin/add.py
+    Alias       /planet     /home/mg/src/planet-mg/output/
 
