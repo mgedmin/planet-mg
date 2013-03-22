@@ -417,6 +417,20 @@ function viewEntry() {
 /*
  * Keyboard event dispatcher.
  */
+function onKeyDown(e) {
+    var code;
+    if (!e) var e = window.event;
+    if (e.keyCode) code = e.keyCode;
+    else if (e.which) code = e.which;
+    if (e.modifiers && e.modifiers != Event.SHIFT_MASK)
+        return; /* Ignore Ctrl/Alt+letter combinations */
+    if (e.altKey || e.ctrlKey)
+        return; /* Ignore Ctrl/Alt+letter combinations */
+    if (code == 27) { /* Escape */
+        hideHelp();
+    }
+}
+
 function onKeyPress(e) {
     var code;
     if (!e) var e = window.event;
@@ -439,6 +453,10 @@ function showHelp() {
     helpbox.css('margin-left', -helpbox.width()/2 + 'px');
     helpbox.css('margin-top', -helpbox.height()/2 + 'px');
     helpbox.toggle();
+}
+
+function hideHelp() {
+    $('#keyboard-shortcuts').hide();
 }
 
 /* Keymap -- keep next to showHelp please */
@@ -536,7 +554,8 @@ g_initial_collapsed = loadCookie();
 window.onload = onLoadHook;
 window.onunload = onUnloadHook;
 document.onkeypress = onKeyPress;
+document.onkeydown = onKeyDown;
 window.setTimeout(initialUpdate, 1000);
 $(function(){
-    $("#keyboard-shortcuts").click(showHelp); // it's actually "toggleHelp"
+    $("#keyboard-shortcuts").click(hideHelp);
 });
