@@ -437,8 +437,8 @@ function onKeyPress(e) {
 function showHelp() {
     alert("Keyboard shortcuts:\n" +
           "  ? - this help\n" +
-          "  v - view entry in a new tab\n" +
-          "  o - collapse/expand current entry\n" +
+          "  t - view entry in a new tab\n" +
+          "  v/o - collapse/expand current entry\n" +
           "  j/k - select next/previous entry\n" +
           "  n/p - select next/previous expanded entry\n" +
           "  N/P - collapse current, then select next/previous expanded entry\n" +
@@ -448,7 +448,8 @@ function showHelp() {
 /* Keymap -- keep next to showHelp please */
 
 g_keymap['?'] = showHelp;
-g_keymap['v'] = viewEntry;
+g_keymap['t'] = viewEntry;
+g_keymap['o'] = toggleCurrent;
 g_keymap['o'] = toggleCurrent;
 g_keymap['j'] = nextEntry;
 g_keymap['k'] = prevEntry;
