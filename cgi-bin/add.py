@@ -1,36 +1,58 @@
 #!/usr/bin/python
 import cgi
+import os
+
+here = os.path.dirname(__file__)
+root = os.path.normpath(os.path.join(here, os.pardir))
 
 
-FORM = """\
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Add a subscription to Planet Mg</title>
-    <link rel="stylesheet" href="planetmg.css">
-  </head>
-  <body>
-    <h1>Add a subscription to Planet Mg</h1>
-    <form method="get">
-      <label for="url-field">Feed URL</label>
-      <input type="text" name="url" id="url-field">
-      <br>
-      <input type="submit" value="Add">
-    </form>
-  </body>
-</html>
+DEFAULT_SIDEBAR = """\
+    <div class="sidebar">
+      <img class="logo" src="images/logo.png" width="136" height="136"
+           alt="a picture of me">
+    </div>
 """
 
 
-RESULT = """\
+def snarf_sidebar(default=DEFAULT_SIDEBAR):
+    try:
+        with open(os.path.join(root, 'output', 'index.html')) as f:
+            body = f.read()
+    except IOError:
+        return default
+    marker, sidebar = body.rpartition('<div class="sidebar">')[-2:]
+    if not sidebar:
+        return default
+    return marker + sidebar.partition('</body>')[0]
+
+
+LAYOUT = """
 <!DOCTYPE html>
 <html>
   <head>
     <title>Add a subscription to Planet Mg</title>
-    <link rel="stylesheet" href="planetmg.css">
+    <link rel="stylesheet" href="planet.css">
   </head>
   <body>
-    <h1>Add a subscription to Planet Mg</h1>
+    <h1>Planet Mg</h1>
+    <h2>Add a subscription</h2>
+{{body}}
+{sidebar}
+  </body>
+</html>
+""".format(sidebar=snarf_sidebar())
+
+
+FORM = LAYOUT.format(body="""\
+    <form class="add-feed" method="get">
+      <label for="url-field">Feed URL</label>
+      <input type="text" name="url" id="url-field">
+      <input type="submit" value="Add">
+    </form>
+""")
+
+
+RESULT = LAYOUT.format(body="""\
     <p>
       This is a manual process: head over to Github and
       <a href="https://github.com/mgedmin/planet-mg/edit/master/config.ini">
@@ -38,11 +60,9 @@ RESULT = """\
     </p>
     <blockquote>
       <pre>[{url}]
-name = {title}</pre>
+# name = {title}</pre>
     </blockquote>
-  </body>
-</html>
-"""
+""")
 
 
 def main():

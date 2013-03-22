@@ -113,6 +113,9 @@ img.face {
 	font-size: 85%;
 
         color: #888;
+
+        border-left: 1px solid #eee;    /* added by mg */
+        padding-bottom: 1.5em;          /* added by mg */
 }
 
 .sidebar .logo {
