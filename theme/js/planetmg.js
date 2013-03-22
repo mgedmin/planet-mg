@@ -449,7 +449,7 @@ function showHelp() {
 
 g_keymap['?'] = showHelp;
 g_keymap['t'] = viewEntry;
-g_keymap['o'] = toggleCurrent;
+g_keymap['v'] = toggleCurrent;
 g_keymap['o'] = toggleCurrent;
 g_keymap['j'] = nextEntry;
 g_keymap['k'] = prevEntry;
