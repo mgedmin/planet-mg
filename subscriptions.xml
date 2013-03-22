@@ -119,9 +119,10 @@
             <outline text="Bluejo's Journal" title="Bluejo's Journal"
                 type="rss"
                 xmlUrl="http://papersky.livejournal.com/data/rss" htmlUrl="http://papersky.livejournal.com/"/>
+            <!-- moved to config.ini because I need to set ignore_in_feed
             <outline text="Charlie's Diary" title="Charlie's Diary"
                 type="rss"
-                xmlUrl="http://www.antipope.org/charlie/blog-static/atom.xml" htmlUrl="http://www.antipope.org/charlie/blog-static/"/>
+                xmlUrl="http://www.antipope.org/charlie/blog-static/atom.xml" htmlUrl="http://www.antipope.org/charlie/blog-static/"/> -->
             <outline text="Dragons! Lip gloss! Death!"
                 title="Dragons! Lip gloss! Death!" type="rss"
                 xmlUrl="http://naominovik.livejournal.com/data/atom" htmlUrl="http://naominovik.livejournal.com/"/>
