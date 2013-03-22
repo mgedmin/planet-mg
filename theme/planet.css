@@ -397,10 +397,12 @@ div.entry > p.date:hover {
     padding: 0px 4px;
 }
 #keyboard-shortcuts dt {
-    display: inline-block;
     float: left;
-    padding: 3px 6px;
     margin-right: 1em;
+}
+#keyboard-shortcuts dt tt {
+    display: inline-block;
+    padding: 6px;
     min-width: 1em;
     text-align: center;
     background: #eee;
@@ -409,7 +411,11 @@ div.entry > p.date:hover {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4),
                       0 1px 1px rgba(0, 0, 0, 0.05);
 }
+#keyboard-shortcuts dt em {
+    margin: 0 3px 0 2px;
+}
 #keyboard-shortcuts dd {
     padding: 3px;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
+    margin-left: 6em;
 }
