@@ -435,14 +435,10 @@ function onKeyPress(e) {
 
 /* Show help. */
 function showHelp() {
-    alert("Keyboard shortcuts:\n" +
-          "  ? - this help\n" +
-          "  t - view entry in a new tab\n" +
-          "  v/o - collapse/expand current entry\n" +
-          "  j/k - select next/previous entry\n" +
-          "  n/p - select next/previous expanded entry\n" +
-          "  N/P - collapse current, then select next/previous expanded entry\n" +
-          "");
+    var helpbox = $('#keyboard-shortcuts');
+    helpbox.css('margin-left', -helpbox.width()/2 + 'px');
+    helpbox.css('margin-top', -helpbox.height()/2 + 'px');
+    helpbox.toggle();
 }
 
 /* Keymap -- keep next to showHelp please */
@@ -541,3 +537,6 @@ window.onload = onLoadHook;
 window.onunload = onUnloadHook;
 document.onkeypress = onKeyPress;
 window.setTimeout(initialUpdate, 1000);
+$(function(){
+    $("#keyboard-shortcuts").click(showHelp); // it's actually "toggleHelp"
+});

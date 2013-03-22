@@ -371,3 +371,24 @@ div.entry > p.date {
 div.entry > p.date:hover {
     background-image: url("images/close-hi.png");
 }
+
+#keyboard-shortcuts {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    border: 1px solid #555;
+    background: #444;
+    background: rgba(68, 68, 68, 0.9);
+    color: #eee;
+    border-radius: 1ex;
+    padding: 1em;
+    margin-left: -15em;
+    margin-top: -6em;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+#keyboard-shortcuts h2 {
+    color: #fff;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
