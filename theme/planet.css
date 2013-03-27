@@ -419,3 +419,9 @@ div.entry > p.date:hover {
     margin-bottom: 12px;
     margin-left: 6em;
 }
+
+span.alttextwrapper {
+    display: block;
+    margin-top: 6px;
+    cursor: pointer;
+}

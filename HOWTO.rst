@@ -1,5 +1,11 @@
-Some problems I've solved
-=========================
+How do I ...?
+=============
+
+
+Where's the documentation of the config file?
+---------------------------------------------
+
+Very easily found: http://intertwingly.net/code/venus/docs/index.html
 
 
 Can I define a feed in sources.xml then override something in config.ini?
@@ -47,10 +53,39 @@ Edit ``config.ini`` and add ::
 How do I fix a feed title?
 --------------------------
 
-**A:** Edit ``config.ini`` and add ::
+Edit ``config.ini`` and add ::
 
     [http://...feed-url...]
     name = Fixed title
+
+
+How do I add a filter on a particular feed?
+-------------------------------------------
+
+Edit ``config.ini`` and add ::
+
+    [http://...feed-url...]
+    filters = myfilter.ext
+
+then create ``filters/myfilter.ext``, where ``ext`` selects the filter type
+(``xslt``, ``py``, ``plugin``).  The filter gets Atom data in the stdin and is
+supposed to emit it on stdout.
+
+
+How do I test/debug XLST filters?
+---------------------------------
+
+Use ::
+
+  xlstproc filters/myfilter.ext - < cache/feed,msgid
+
+
+How do I pretty-print XML?
+--------------------------
+
+Use ::
+
+  xmllint --format cache/feed,msg
 
 
 How can I git push my changes without entering my password?

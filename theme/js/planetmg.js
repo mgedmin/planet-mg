@@ -558,4 +558,8 @@ document.onkeydown = onKeyDown;
 window.setTimeout(initialUpdate, 1000);
 $(function(){
     $("#keyboard-shortcuts").click(hideHelp);
+    $(".alttextwrapper").click(function(e){
+        e.preventDefault();
+        $('.alttext', this).toggle();
+    });
 });
