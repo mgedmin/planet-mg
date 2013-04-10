@@ -1,6 +1,9 @@
 #!/usr/bin/python
 import cgi
 import os
+import urllib
+from contextlib import closing
+
 
 here = os.path.dirname(__file__)
 root = os.path.normpath(os.path.join(here, os.pardir))
@@ -62,7 +65,18 @@ RESULT = LAYOUT.format(body="""\
       <pre>[{url}]
 # name = {title}</pre>
     </blockquote>
+    <p>
+      Raw source of the feed:
+    </p>
+    <blockquote>
+      <pre>{source}</pre>
+    </blockquote>
 """)
+
+
+def fetch(url):
+    with closing(urllib.urlopen(url)) as f:
+        return f.read()
 
 
 def main():
@@ -74,7 +88,9 @@ def main():
     else:
         url = form["url"].value
         title = '(name of blog)'
-        print RESULT.format(url=cgi.escape(url), title=cgi.escape(title))
+        source = fetch(url)
+        print RESULT.format(url=cgi.escape(url), title=cgi.escape(title),
+                            source=cgi.escape(source))
 
 
 if __name__ == '__main__':
