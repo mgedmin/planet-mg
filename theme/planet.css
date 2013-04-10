@@ -428,5 +428,5 @@ span.alttextwrapper {
 
 .feed-source pre {
     max-width: 100%;
-    overflow: pre-wrap;
+    white-space: pre-wrap;
 }
