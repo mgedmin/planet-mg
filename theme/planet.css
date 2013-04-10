@@ -425,3 +425,8 @@ span.alttextwrapper {
     margin-top: 6px;
     cursor: pointer;
 }
+
+.feed-source pre {
+    max-width: 100%;
+    overflow: pre-wrap;
+}

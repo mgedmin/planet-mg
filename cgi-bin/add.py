@@ -3,6 +3,7 @@ import cgi
 import os
 import urllib
 from contextlib import closing
+from xml.etree import cElementTree as ET
 
 
 here = os.path.dirname(__file__)
@@ -36,7 +37,7 @@ LAYOUT = """
     <title>Add a subscription to Planet Mg</title>
     <link rel="stylesheet" href="planet.css">
   </head>
-  <body>
+  <body class="add-feed">
     <h1>Planet Mg</h1>
     <h2>Add a subscription</h2>
 {{body}}
@@ -61,14 +62,14 @@ RESULT = LAYOUT.format(body="""\
       <a href="https://github.com/mgedmin/planet-mg/edit/master/config.ini">
       edit config.ini</a>, then add
     </p>
-    <blockquote>
+    <blockquote class="example">
       <pre>[{url}]
 # name = {title}</pre>
     </blockquote>
     <p>
       Raw source of the feed:
     </p>
-    <blockquote>
+    <blockquote class="feed-source">
       <pre>{source}</pre>
     </blockquote>
 """)
@@ -79,6 +80,14 @@ def fetch(url):
         return f.read()
 
 
+def feed_title(source):
+    tree = ET.fromstring(source)
+    rss_title = tree.find('channel/title')
+    if rss_title is not None:
+        return rss_title.text
+    return None
+
+
 def main():
     print "Content-Type: text/html; charset=UTF-8"
     print
@@ -87,8 +96,8 @@ def main():
         print FORM
     else:
         url = form["url"].value
-        title = '(name of blog)'
         source = fetch(url)
+        title = feed_title(source) or '(name of blog)'
         print RESULT.format(url=cgi.escape(url), title=cgi.escape(title),
                             source=cgi.escape(source))
 
