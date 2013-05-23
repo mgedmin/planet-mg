@@ -333,6 +333,17 @@ h4.planet-maemo {
     color: #d29d9d;
 }
 
+h3.more-words-deeper-hole {
+    color: white;
+    background-color: #102446;
+    border: 1px solid #081223;
+}
+h4.more-words-deeper-hole {
+    background-color: #6cd1df;
+    border: 1px solid #657a9e;
+    color: #102446;
+}
+
 /* Javascript magic */
 
 div.current > h4 {
