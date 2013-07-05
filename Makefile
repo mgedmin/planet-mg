@@ -1,3 +1,5 @@
+BROWSER = xdg-open
+
 .PHONY: all
 all: .env cache log venus/planet.py
 
@@ -28,6 +30,10 @@ update-cron: .env cache log venus/planet.py
 	@.env/bin/python venus/planet.py config.ini >> log/update.log 2>&1
 	@printf '~~~ %s cron update done\n\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 
+.PHONY: preview
+preview: output/index.html
+	$(BROWSER) output/index.html
+
 # Implementation
 
 .env:
@@ -41,4 +47,7 @@ log:
 
 venus/planet.py:
 	git submodule update --init
+
+output/index.html:
+	$(MAKE) update
 
