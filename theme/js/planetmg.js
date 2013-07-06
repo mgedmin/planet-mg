@@ -97,6 +97,10 @@ function makeVisible(element) {
      */
     var visible_top = window.scrollY;
     var visible_bottom = window.scrollY + window.innerHeight;
+    var tc = $('#touch-controls');
+    if (tc.is(":visible")) {
+        visible_bottom -= tc[0].offsetHeight;
+    }
     /* Calculate the amount to scroll */
     var amount = 0;
     if (visible_top > top) {
