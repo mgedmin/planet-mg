@@ -562,4 +562,8 @@ $(function(){
         e.preventDefault();
         $('.alttext', this).toggle();
     });
+    $(".collapser").click(function(e){
+        e.preventDefault();
+        $(this).siblings(".collapsible").slideToggle(200);
+    });
 });

@@ -444,3 +444,7 @@ span.alttextwrapper {
     max-width: 100%;
     white-space: pre-wrap;
 }
+
+.collapser {
+    cursor: pointer;
+}
