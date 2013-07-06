@@ -459,7 +459,18 @@ function hideHelp() {
     $('#keyboard-shortcuts').hide();
 }
 
-/* Keymap -- keep next to showHelp please */
+/* Show/hide touch controls */
+function toggleTouchControls() {
+    var tc = $('#touch-controls');
+    tc.toggle();
+    if (tc.is(":visible")) {
+        $('#stats').removeClass('notouch').addClass('touch');
+    } else {
+        $('#stats').removeClass('touch').addClass('notouch');
+    }
+}
+
+/* Keymap -- keep in sync with the help text in ../index.html.tmpl please */
 
 g_keymap['?'] = showHelp;
 g_keymap['t'] = viewEntry;
@@ -565,5 +576,13 @@ $(function(){
     $(".collapser").click(function(e){
         e.preventDefault();
         $(this).siblings(".collapsible").slideToggle(200);
+    });
+    $("#stats").click(toggleTouchControls);
+    $("#touch-controls tt").click(function(e){
+        e.preventDefault();
+        var handler = g_keymap[e.target.innerHTML];
+        if (handler) {
+            handler();
+        }
     });
 });

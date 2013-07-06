@@ -391,15 +391,38 @@ div.entry > p.date:hover {
     left: 50%;
     top: 50%;
     z-index: 100;
+}
+#keyboard-shortcuts,
+#touch-controls {
     border: 1px solid #555;
     background: #444;
     background: rgba(68, 68, 68, 0.9);
     color: #eee;
-    border-radius: 1ex;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
     padding: 1em;
+}
+#stats {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    cursor: pointer;
+}
+#stats.touch {
+    padding: 1em;
+    color: #eee;
+    background: transparent;
+    border: none;
+}
+#stats.notouch {
+    padding: 2px 4px;
+    background: white;
+    color: black;
+}
+#keyboard-shortcuts {
+    border-radius: 1ex;
     margin-left: -15em;
     margin-top: -6em;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
 }
 #keyboard-shortcuts h2 {
     color: #fff;
@@ -414,7 +437,8 @@ div.entry > p.date:hover {
     float: left;
     margin-right: 1em;
 }
-#keyboard-shortcuts dt tt {
+#keyboard-shortcuts dt tt,
+#touch-controls tt {
     display: inline-block;
     padding: 6px;
     min-width: 1em;
@@ -432,6 +456,19 @@ div.entry > p.date:hover {
     padding: 3px;
     margin-bottom: 12px;
     margin-left: 6em;
+}
+
+#touch-controls {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+}
+#touch-controls tt {
+    margin-right: 2em;
+    cursor: pointer;
 }
 
 span.alttextwrapper {
