@@ -118,8 +118,19 @@ img.face {
         padding-bottom: 1.5em;          /* added by mg */
 }
 
+.sidebar .panel {
+        margin-bottom: 0;
+	padding-left: 1em;
+}
+
+.sidebar .panel + .panel {
+	border-top: 1px solid #eee;
+	margin-top: 1.5em;
+	padding-top: 1em;
+}
+
 .sidebar .logo {
-        margin-left: 1em;
+        margin-left: 0em;
 }
 
 .sidebar h2 {
@@ -127,14 +138,14 @@ img.face {
 	font-weight: bold;
 	color: #666;
 
-	padding-left: 1em;
+	padding-left: 0em;
 	margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 1ex;
 }
 
 .sidebar ul {
-	padding-left: 1em;
+	padding-left: 0em;
 	padding-right: 1em;
 	margin-left: 0px;
         margin-top: 1ex;
@@ -156,14 +167,6 @@ img.face {
 
 .sidebar ul li a img {
         border: 0;
-}
-
-.sidebar p {
-	border-top: 1px solid #eee;
-	margin-top: 1.5em;
-        margin-bottom: 0;
-	padding-top: 1em;
-	padding-left: 1em;
 }
 
 .sidebar .message {

@@ -25,6 +25,11 @@
 </head>
 
 <body>
+
+### 
+### Main content area
+### 
+
 <h1><TMPL_VAR name></h1>
 <TMPL_VAR admin>
 
@@ -92,6 +97,10 @@
 </TMPL_LOOP>
 
 
+### 
+### Help popup
+### 
+
 <div id="keyboard-shortcuts" style="display: none">
 <h2>Keyboard shortcuts</h2>
 <dl>
@@ -115,17 +124,24 @@
 </dl>
 </div>
 
-<div class="sidebar">
-<img class="logo" src="images/logo.png" width="136" height="136" alt="a picture of me">
 
-<p>
+### 
+### Sidebar
+### 
+
+<div class="sidebar">
+
+<div class="panel">
+<img class="logo" src="images/logo.png" width="136" height="136" alt="a picture of me">
+</div>
+
+<div class="panel">
 <strong>Last updated</strong><br>
 <span class="date"><TMPL_VAR date></span><br>
 <em class="tz-notice">All times are UTC, unless specified otherwise.</em>
-</p>
+</div>
 
-<p></p>
-
+<div class="panel">
 <h2>Subscriptions</h2>
 <ul>
 <TMPL_LOOP Channels>
@@ -134,9 +150,9 @@
 </li>
 </TMPL_LOOP>
 </ul>
+</div>
 
-<p></p>
-
+<div class="panel">
 <h2>Planetarium</h2>
 <ul>
 <li><a href="http://www.planetapache.org/">Planet Apache</a></li>
@@ -150,13 +166,15 @@
 <li><a href="http://www.planetplanet.org/">more...</a></li>
 </ul>
 
-<p>
+</div>
+
+<div class="panel">
 Powered by<br>
 <a href="http://intertwingly.net/code/venus/"><img src="images/planet.png" width="80" height="15" alt="Planet" border="0"></a>
 <br>
 <br>
 Source in <a href="https://github.com/mgedmin/planet-mg">Github</a>
-</p>
+</div>
 
 </div>
 </body>
