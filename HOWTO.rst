@@ -71,6 +71,17 @@ then create ``filters/myfilter.ext``, where ``ext`` selects the filter type
 (``xslt``, ``py``, ``plugin``).  The filter gets Atom data in the stdin and is
 supposed to emit it on stdout.
 
+Note that a filter is applied to feed data before it gets cached, so if
+you want to see any effect, you have to nuke the cache first.
+
+
+Do filters specified in an individual entry add or override global filters?
+---------------------------------------------------------------------------
+
+Add, I think.  I've a global filter that adds target="_blank" to all links,
+and a local identi.ca filter that adds missing <title> elements, and in
+the output I get identi.ca entries with both titles and target="_blank".
+
 
 How do I test/debug XLST filters?
 ---------------------------------
