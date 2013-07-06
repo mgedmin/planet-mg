@@ -226,7 +226,7 @@ function loadCookie() {
     var collapsed = {};
     var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
-        var parts = cookies[i].split("=");
+        var parts = cookies[i].trim().split("=");
         if (parts[0] == "collapse") {
             var ids = unescape(parts[1]).split(",");
             for (var j = 0; j < ids.length; j++) {
