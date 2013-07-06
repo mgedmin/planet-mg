@@ -449,6 +449,15 @@ div.entry > p.date:hover {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4),
                       0 1px 1px rgba(0, 0, 0, 0.05);
 }
+#touch-controls {
+    padding: 2em;
+    padding-right: 200px;
+}
+#touch-controls tt {
+    font-size: 200%;
+    padding: 12px;
+    border-radius: 4px;
+}
 #keyboard-shortcuts dt em {
     margin: 0 3px 0 2px;
 }
@@ -467,8 +476,11 @@ div.entry > p.date:hover {
     text-align: center;
 }
 #touch-controls tt {
-    margin-right: 2em;
+    margin-right: 1em;
     cursor: pointer;
+}
+#touch-controls span {
+    margin-right: 1.5em;
 }
 
 span.alttextwrapper {

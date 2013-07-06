@@ -585,4 +585,7 @@ $(function(){
             handler();
         }
     });
+    if (/Android/i.test(navigator.userAgent)) {
+        toggleTouchControls();
+    };
 });
