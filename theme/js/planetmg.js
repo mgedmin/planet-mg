@@ -583,4 +583,5 @@ $(function(){
         updateStats(); // make sure div id="#stats" exists
         toggleTouchControls();
     };
+    FastClick.attach(document.body);
 });
