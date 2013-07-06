@@ -3,9 +3,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Unit tests for Planet Mg javascript</title>
   <link rel="stylesheet" href="planet.css" type="text/css">
+  <!-- scripts used by the real page -->
   <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="js/fastclick-0.6.7.js"></script>
   <script type="text/javascript" src="js/planetmg.js"></script>
+  <!-- scripts used by the tests -->
   <script type="text/javascript" src="js/jsUnitCore.js"></script>
   <script type="text/javascript" src="js/tests.js"></script>
   <script type="text/javascript" src="js/runner.js"></script>
@@ -55,18 +57,20 @@
   </style>
 </head>
 <body onload="runAllTests();">
-  <h1>Unit tests for Planet Mg javascript</h1>
+  <h1>Unit tests for Planet Mg JavaScript</h1>
 
   <p>
     <a style="float:right" accesskey="R" title="Reload page (Alt+R)"
        href="javascript:window.location.reload()">Refresh</a>
     You can also use <a href="http://www.jsunit.net/">JsUnit</a> to run this file.
   </p>
-  
+
   <div id="testoutput">
   </div>
 
   <p>Test data follows</p>
+
+  <div id="content">
 
   <div class="daygroup">
     <h2 class="foo">Some day</h2>
@@ -77,22 +81,26 @@
       <div class="entrygroup" id="id1">
         <h4 class="foo" onclick="javascript:toggle(this.parentNode)">Some entry</h4>
         <div class="entry">
+        <div class="content">
           Some text and a span <span class="date" id="nontimelink">
             2001-01-01 01:01 +12:34</span> that should not be changed.
         </div>
-        <p class="date" onclick="javascript:toggle(this.parentNode)">
+        <p class="date" onclick="javascript:toggleAndShow(this.parentNode.parentNode)">
           <span class="date" id="timelink">2005-03-12 14:52</span>
         </p>
+        </div>
       </div>
 
       <div class="entrygroup" id="id2">
         <h4 class="foo" onclick="javascript:toggle(this.parentNode)">Some entry</h4>
         <div class="entry">
+        <div class="content">
           Some text
         </div>
-        <p class="date" onclick="javascript:toggle(this.parentNode)">
+        <p class="date" onclick="javascript:toggleAndShow(this.parentNode)">
           <span class="date">2005-03-12 14:52</span>
         </p>
+        </div>
       </div>
 
     </div>
@@ -103,11 +111,13 @@
       <div class="entrygroup" id="id3">
         <h4 class="bar" onclick="javascript:toggle(this.parentNode)">Some entry</h4>
         <div class="entry">
+        <div class="content">
           Some text
         </div>
-        <p class="date" onclick="javascript:toggle(this.parentNode)">
+        <p class="date" onclick="javascript:toggleAndShow(this.parentNode)">
           <span class="date">2005-03-12 14:52</span>
         </p>
+        </div>
       </div>
     </div>
   </div>
@@ -121,6 +131,7 @@
       <div class="entrygroup" id="id4">
         <h4 class="baz" onclick="javascript:toggle(this.parentNode)">Some entry</h4>
         <div class="entry">
+        <div class="content">
           <p>Some text</p>
 
           <h1>Some evil h1 inside an entry</h1>
@@ -129,9 +140,10 @@
           <h4>Some evil h4 inside an entry</h4>
 
         </div>
-        <p class="date" onclick="javascript:toggle(this.parentNode)">
+        <p class="date" onclick="javascript:toggleAndShow(this.parentNode)">
           <span class="date">2005-03-12 14:52</span>
         </p>
+        </div>
       </div>
 
     </div>
