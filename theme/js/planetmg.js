@@ -283,13 +283,8 @@ function updateStats() {
     if (!stats) {
         stats = document.createElement('div');
         stats.id = 'stats';
-        stats.style.position = 'fixed';
-        stats.style.bottom = 0;
-        stats.style.right = 0;
-        stats.style.padding = '2px 4px';
-        stats.style.background = 'white';
-        stats.style.zIndex = 1;
         document.body.appendChild(stats);
+        $(stats).click(toggleTouchControls);
     }
     var total_entries = getEntries().length;
     var new_entries = total_entries - g_n_collapsed;
@@ -463,11 +458,7 @@ function hideHelp() {
 function toggleTouchControls() {
     var tc = $('#touch-controls');
     tc.toggle();
-    if (tc.is(":visible")) {
-        $('#stats').removeClass('notouch').addClass('touch');
-    } else {
-        $('#stats').removeClass('touch').addClass('notouch');
-    }
+    $('#stats').toggleClass('touch');
 }
 
 /* Keymap -- keep in sync with the help text in ../index.html.tmpl please */
@@ -577,7 +568,6 @@ $(function(){
         e.preventDefault();
         $(this).siblings(".collapsible").slideToggle(200);
     });
-    $("#stats").click(toggleTouchControls);
     $("#touch-controls tt").click(function(e){
         e.preventDefault();
         var handler = g_keymap[e.target.innerHTML];
@@ -586,6 +576,7 @@ $(function(){
         }
     });
     if (/Android/i.test(navigator.userAgent)) {
+        updateStats(); // make sure div id="#stats" exists
         toggleTouchControls();
     };
 });

@@ -408,16 +408,16 @@ div.entry > p.date:hover {
     z-index: 20;
     cursor: pointer;
 }
+#stats {
+    padding: 2px 4px;
+    background: white;
+    color: black;
+}
 #stats.touch {
     padding: 1em;
     color: #eee;
     background: transparent;
     border: none;
-}
-#stats.notouch {
-    padding: 2px 4px;
-    background: white;
-    color: black;
 }
 #keyboard-shortcuts {
     border-radius: 1ex;
@@ -480,7 +480,7 @@ div.entry > p.date:hover {
     cursor: pointer;
 }
 #touch-controls span {
-    margin-right: 1.5em;
+    margin-right: 0.5em;
 }
 
 span.alttextwrapper {
