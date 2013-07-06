@@ -39,6 +39,11 @@ update-cron: .env cache log venus/planet.py
 preview: output/index.html
 	$(BROWSER) output/index.html
 
+.PHONY: live-preview
+live-preview: output/index.html
+	(cd output && python -m SimpleHTTPServer 8000) &
+	$(BROWSER) http://localhost:8000/
+
 # Implementation
 
 .env:
