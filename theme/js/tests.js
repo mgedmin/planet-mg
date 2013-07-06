@@ -1,5 +1,7 @@
 /* Unit tests for planetmg.js */
 
+'uses strict';
+
 var test_saved_state = {};
 
 function setUp() {

@@ -6,6 +6,8 @@
  * vim:sw=4 sts=4 et:
  */
 
+'use strict';
+
 /* Global vars */
 var g_collapsed = {};           /* Set of collapsed element IDs. */
 var g_n_collapsed = 0;          /* Number of collapsed elements. */

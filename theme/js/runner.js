@@ -4,6 +4,8 @@
  * go download JsUnit from http://www.jsunit.net/
  */
 
+'uses strict';
+
 /* Output formatter. */
 
 function Reporter() {
