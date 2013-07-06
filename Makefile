@@ -7,6 +7,11 @@ all: .env cache log venus/planet.py
 test: .env venus/planet.py
 	.env/bin/python venus/runtests.py
 
+.PHONY: test-js
+test-js:
+	(cd theme && python -m SimpleHTTPServer 8009) &
+	$(BROWSER) http://localhost:8009/test.html
+
 .PHONY: update
 update: .env cache log venus/planet.py
 	@printf '\n\n--- %s update started\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
