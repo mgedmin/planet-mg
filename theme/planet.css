@@ -475,6 +475,7 @@ div.entry > p.date:hover {
     bottom: 0;
     z-index: 10;
     text-align: center;
+    white-space: nowrap;
 }
 #touch-controls tt {
     margin-right: 1em;
