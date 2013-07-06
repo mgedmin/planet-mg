@@ -451,7 +451,8 @@ div.entry > p.date:hover {
 }
 #touch-controls {
     padding: 2em;
-    padding-right: 200px;
+    padding-left: 1em;
+    padding-right: 150px;
 }
 #touch-controls tt {
     font-size: 200%;
@@ -480,7 +481,7 @@ div.entry > p.date:hover {
     cursor: pointer;
 }
 #touch-controls span {
-    margin-right: 0.5em;
+    margin-right: 0.25em;
 }
 
 span.alttextwrapper {
