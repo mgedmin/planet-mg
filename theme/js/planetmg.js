@@ -583,5 +583,6 @@ $(function(){
         updateStats(); // make sure div id="#stats" exists
         toggleTouchControls();
     };
+    $(".entry .content").addClass('needsclick');
     FastClick.attach(document.body);
 });
