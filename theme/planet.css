@@ -419,6 +419,9 @@ div.entry > p.date:hover {
     background: transparent;
     border: none;
 }
+#content.touch {
+    padding-bottom: 150px;
+}
 #keyboard-shortcuts {
     border-radius: 1ex;
     margin-left: -15em;

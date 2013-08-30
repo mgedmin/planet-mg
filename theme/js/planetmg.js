@@ -465,6 +465,7 @@ function toggleTouchControls() {
     var tc = $('#touch-controls');
     tc.toggle();
     $('#stats').toggleClass('touch');
+    $('#content').toggleClass('touch');
 }
 
 /* Keymap -- keep in sync with the help text in ../index.html.tmpl please */
