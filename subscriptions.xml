@@ -205,8 +205,10 @@
                 xmlUrl="http://www.girlgeniusonline.com/ggmain.rss" htmlUrl="http://www.girlgeniusonline.com/"/>
             <outline text="Kevin and Kell" title="Kevin and Kell"
                 type="rss" xmlUrl="http://www.kevinandkell.com/rss.xml" htmlUrl="http://www.kevinandkell.com/"/>
+        <!-- 
             <outline text="Penny Arcade" title="Penny Arcade" type="rss"
                 xmlUrl="http://feeds.penny-arcade.com/pa-mainsite/" htmlUrl="http://www.penny-arcade.com"/>
+                -->
             <outline text="PHD Comics" title="PHD Comics" type="rss"
                 xmlUrl="http://www.phdcomics.com/gradfeed.php" htmlUrl="http://www.phdcomics.com"/>
             <outline text="QC RSS" title="QC RSS" type="rss"
