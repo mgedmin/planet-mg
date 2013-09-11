@@ -544,7 +544,7 @@ function initialUpdate() {
 function onLoadHook() {
     g_finished_loading = true;
     initialUpdate();
-    g_initial_collapsed = [];
+    g_initial_collapsed = {};
     g_prev_entries = [];
 }
 
