@@ -285,20 +285,16 @@ function performQueuedSaveCookie() {
  * Update the counters shown on the bottom right corner.
  */
 function updateStats() {
-    var stats = document.getElementById('stats');
-    if (!stats) {
-        stats = document.createElement('div');
-        stats.id = 'stats';
-        document.body.appendChild(stats);
-        $(stats).click(toggleTouchControls);
-    }
-    var total_entries = getEntries().length;
-    var new_entries = total_entries - g_n_collapsed;
-    stats.innerHTML = total_entries + ' entries, ' + new_entries + ' new.';
     if (!g_original_title) {
         g_original_title = document.title;
     }
+    var total_entries = getEntries().length;
+    var new_entries = total_entries - g_n_collapsed;
     document.title = g_original_title + ' - ' + new_entries + ' new entries';
+    var stats = document.getElementById('stats');
+    if (stats) {
+        stats.innerHTML = total_entries + ' entries, ' + new_entries + ' new.';
+    }
 }
 
 /*
@@ -582,8 +578,8 @@ $(function(){
             handler();
         }
     });
+    $("#stats").click(toggleTouchControls);
     if (/Android/i.test(navigator.userAgent)) {
-        updateStats(); // make sure div id="#stats" exists
         toggleTouchControls();
     };
     FastClick.attach(document.body);
