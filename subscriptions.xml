@@ -106,7 +106,7 @@
             title="Twitter / vcotwdorso" type="rss"
             xmlUrl="http://twitter.com/statuses/user_timeline/32378536.rss" htmlUrl="http://twitter.com/vcotwdorso"/> -->
         <outline text="Vi Hart" title="Vi Hart" type="rss"
-            xmlUrl="http://vihart.com/blog/rss.xml" htmlUrl="http://vihart.com/"/>
+            xmlUrl="http://vihart.com/feed/" htmlUrl="http://vihart.com/"/>
         <outline text="visophyte: shiny? shiny."
             title="visophyte: shiny? shiny." type="rss"
             xmlUrl="http://www.visophyte.org/blog/feed/" htmlUrl="http://www.visophyte.org/blog"/>
