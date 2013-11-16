@@ -243,9 +243,10 @@
                 xmlUrl="http://www.exampler.com/blog/feed/" htmlUrl="http://www.exampler.com/blog"/>
             <outline text="Infotropism" title="Infotropism" type="rss"
                 xmlUrl="http://feeds.feedburner.com/Infotropism" htmlUrl="http://infotrope.net"/>
+            <!-- 404
             <outline text="mgedmin and friends"
                 title="mgedmin and friends" type="rss"
-                xmlUrl="http://identi.ca/api/statuses/friends_timeline/mgedmin.atom" htmlUrl="http://identi.ca/mgedmin/all"/>
+                xmlUrl="http://identi.ca/api/statuses/friends_timeline/mgedmin.atom" htmlUrl="http://identi.ca/mgedmin/all"/> -->
             <outline text="Rachel By The Bay - Writing"
                 title="Rachel By The Bay - Writing" type="rss"
                 xmlUrl="http://rachelbythebay.com/w/atom.xml" htmlUrl="http://rachelbythebay.com/w/"/>
