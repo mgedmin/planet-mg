@@ -1,10 +1,10 @@
 BROWSER = xdg-open
 
 .PHONY: all
-all: .env cache log venus/planet.py
+all: .env/.deps cache log venus/planet.py
 
 .PHONY: test
-test: .env venus/planet.py
+test: all
 	.env/bin/python venus/runtests.py
 
 .PHONY: test-js
@@ -13,19 +13,19 @@ test-js:
 	$(BROWSER) http://localhost:8009/test.html
 
 .PHONY: update
-update: .env cache log venus/planet.py
+update: all
 	@printf '\n\n--- %s update started\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 	.env/bin/python venus/planet.py config.ini 2>&1 | tee -a log/update.log
 	@printf '~~~ %s update done\n\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 
 .PHONY: update-offline
-update-offline: .env cache log venus/planet.py
+update-offline: all
 	@printf '\n\n--- %s offline update started\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 	.env/bin/python venus/planet.py -o config.ini 2>&1 | tee -a log/update.log
 	@printf '~~~ %s offline update done\n\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 
 .PHONY: update-cron
-update-cron: .env cache log venus/planet.py
+update-cron: all
 	@-git pull -q
 	@printf '\n\n--- %s cron update started\n' "$$(date +'%Y-%m-%d %H:%M:%S')" >> log/update.log
 	@savelog -l -q -c 168 output/atom.xml >> log/update.log 2>&1
@@ -48,6 +48,10 @@ live-preview: output/index.html
 
 .env:
 	virtualenv $@
+
+.env/.deps: .env requirements.txt
+	.env/bin/pip install -r requirements.txt
+	touch $@
 
 cache:
 	mkdir $@

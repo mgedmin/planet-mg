@@ -88,7 +88,7 @@ How do I test/debug XLST filters?
 
 Use ::
 
-  xlstproc filters/myfilter.ext - < cache/feed,msgid
+  xlstproc filters/myfilter.xslt - < cache/feed,msgid
 
 
 How do I pretty-print XML?
