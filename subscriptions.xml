@@ -275,9 +275,10 @@
                 xmlUrl="http://feeds.feedburner.com/hans-eric" htmlUrl="http://www.hans-eric.com"/>
         </outline>
         <outline title="News" text="News">
+            <!-- 500
             <outline text="KernelTrap - Kernel news"
                 title="KernelTrap - Kernel news" type="rss"
-                xmlUrl="http://kerneltrap.org/node/feed" htmlUrl="http://kerneltrap.org"/>
+                xmlUrl="http://kerneltrap.org/node/feed" htmlUrl="http://kerneltrap.org"/> -->
             <outline text="LWN.net" title="LWN.net" type="rss"
                 xmlUrl="http://lwn.net/headlines/newrss" htmlUrl="http://lwn.net"/>
         </outline>
