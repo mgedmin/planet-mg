@@ -51,6 +51,7 @@ Planet mangles it into the following ATOM::
 We want to put the comic link and inline img in the ATOM <content>.
 """
 import sys
+import copy
 import lxml.etree
 
 doc = lxml.etree.parse(sys.stdin)
@@ -63,6 +64,9 @@ comiclinks = doc.xpath('//atom:summary/xhtml:div/xhtml:p[xhtml:a[xhtml:img]]',
                        namespaces=nsmap)
 if comiclinks:
     content_div = doc.xpath('//atom:content/xhtml:div', namespaces=nsmap)[0]
-    content_div[:0] = comiclinks
+    for el in reversed(comiclinks):
+        el = copy.deepcopy(el)
+        el.tail = ''
+        content_div.insert(0, el)
 
 print(lxml.etree.tostring(doc))
