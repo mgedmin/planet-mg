@@ -65,6 +65,11 @@ h4 a {
 	color: inherit;
 }
 
+h4 .channel {
+        color: #555;
+        cursor: default;
+}
+
 img.face {
 	float: right;
 /*	margin-top: -3em; */
