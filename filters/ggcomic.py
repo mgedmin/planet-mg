@@ -1,6 +1,5 @@
 #!/usr/bin/python
 """Inline the Girl Genius Online comic image.
-the Chaos Life feed.
 
 The RSS source looks roughly like this::
 

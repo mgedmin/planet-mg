@@ -60,6 +60,7 @@ atom = "http://www.w3.org/2005/Atom"
 xhtml = 'http://www.w3.org/1999/xhtml'
 nsmap = dict(xhtml=xhtml, atom=atom)
 
+# This is the same as filters/sandraandwoo.py, unify!
 comiclinks = doc.xpath('//atom:summary/xhtml:div/xhtml:p[xhtml:a[xhtml:img]]',
                        namespaces=nsmap)
 if comiclinks:
