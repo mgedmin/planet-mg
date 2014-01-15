@@ -217,7 +217,7 @@
                 type="rss"
                 xmlUrl="http://seemikedraw.com.au/feed" htmlUrl="http://seemikedraw.com.au"/>
             <outline text="Sinfest" title="Sinfest" type="rss"
-                xmlUrl="http://henrik.nyh.se/scrapers/sinfest.rss" htmlUrl="http://www.sinfest.net"/>
+                xmlUrl="http://www.sinfest.net/rss.php" htmlUrl="http://www.sinfest.net"/>
             <outline text="Wormwood Saga - Daniel Lieske Blog"
                 title="Wormwood Saga - Daniel Lieske Blog" type="rss"
                 xmlUrl="http://feeds.feedburner.com/daniellieskeblog" htmlUrl="http://daniellieske.blogspot.com/"/>
