@@ -69,6 +69,10 @@ comiclinks = doc.xpath('//atom:summary/xhtml:div/xhtml:p[xhtml:a[xhtml:img]]',
 if comiclinks:
     content_div = doc.xpath('//atom:content/xhtml:div', namespaces=nsmap)[0]
     for el in reversed(comiclinks):
+        url = el.xpath('.//xhtml:img/@src', namespaces=nsmap)[0]
+        if url in lxml.etree.tostring(content_div):
+            # there's already a an image there, skip
+            continue
         el = copy.deepcopy(el)
         el.tail = ''
         content_div.insert(0, el)
