@@ -43,7 +43,7 @@
             xmlUrl="http://icemac.posterous.com/rss.xml" htmlUrl="http://icemac.posterous.com"/>
         <outline text="Jacob Kaplan-Moss - Writing"
             title="Jacob Kaplan-Moss - Writing" type="rss"
-            xmlUrl="http://jacobian.org/feed/" htmlUrl="http://www.jacobian.org/writing/"/>
+            xmlUrl="http://jacobian.org/feed.xml" htmlUrl="http://www.jacobian.org/writing/"/>
         <!-- timeout
         <outline text="Jaro kreivas blogas" title="Jaro kreivas blogas"
             type="rss" xmlUrl="http://jaro.lt/blog-1/RSS" htmlUrl="http://jaro.lt"/> -->
@@ -153,7 +153,7 @@
                 title="Embedded in Academia" type="rss"
                 xmlUrl="http://blog.regehr.org/feed" htmlUrl="http://blog.regehr.org"/>
             <outline text="Ex Urbe" title="Ex Urbe" type="rss"
-                xmlUrl="http://exurbe.com/?feed=rss2" htmlUrl="http://exurbe.com"/>
+                xmlUrl="http://www.exurbe.com/?feed=rss2" htmlUrl="http://exurbe.com"/>
             <outline text="fuzzy notepad" title="fuzzy notepad"
                 type="rss" xmlUrl="http://me.veekun.com/atom.xml" htmlUrl="http://me.veekun.com/"/>
             <outline text="Illustrating Reddit"
@@ -296,7 +296,7 @@
             <outline text="Laimikis" title="Laimikis" type="rss"
                 xmlUrl="http://laimikis.wordpress.com/feed/" htmlUrl="http://laimikis.wordpress.com"/>
             <outline text="Meme Cats" title="Meme Cats" type="rss"
-                xmlUrl="http://dropline.net/cats/rss.xml" htmlUrl="http://dropline.net/cats"/>
+                xmlUrl="https://dropline.net/cats/rss.xml" htmlUrl="http://dropline.net/cats"/>
             <outline text="Photos from Albertas Agejevas"
                 title="Photos from Albertas Agejevas" type="rss"
                 xmlUrl="http://api.flickr.com/services/feeds/photos_public.gne?id=74699799@N00&amp;lang=en-us&amp;format=atom" htmlUrl="http://www.flickr.com/photos/alga/"/>
