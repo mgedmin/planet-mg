@@ -31,5 +31,12 @@ if not entry.xpath('./atom:author', namespaces=nsmap):
     author = entry.xpath('./atom:source/atom:author', namespaces=nsmap)
     if author:
         entry.append(copy.deepcopy(author[0]))
+    else:
+        title = entry.xpath('./atom:source/atom:title', namespaces=nsmap)
+        if title:
+            author = lxml.etree.SubElement(entry, '{%s}author' % atom)
+            name = lxml.etree.SubElement(author, '{%s}name' % atom)
+            name.text = title[0].text
+
 
 print(lxml.etree.tostring(doc))
