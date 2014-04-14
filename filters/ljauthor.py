@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Add missing <author> to LiveJournal feeds
+"""Add missing <author> to LiveJournal (and other, actually) feeds
 
 Planet's ATOM looks like this:
 
