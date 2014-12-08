@@ -86,6 +86,9 @@ def feed_title(source):
     rss_title = tree.find('channel/title')
     if rss_title is not None:
         return rss_title.text
+    atom_title = tree.find('{http://www.w3.org/2005/Atom}title')
+    if atom_title is not None:
+        return atom_title.text
     return None
 
 
