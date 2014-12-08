@@ -90,7 +90,7 @@ def feed_title(source):
 
 
 def pretty_print(source):
-    return minidom.parseString(source).toprettyxml()
+    return minidom.parseString(source).toprettyxml().encode('UTF-8')
 
 
 def main():
@@ -109,5 +109,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
