@@ -3,6 +3,7 @@ import cgi
 import os
 import urllib
 from contextlib import closing
+from xml.dom import minidom
 from xml.etree import cElementTree as ET
 
 
@@ -88,6 +89,10 @@ def feed_title(source):
     return None
 
 
+def pretty_print(source):
+    return minidom.parseString(source).toprettyxml()
+
+
 def main():
     print "Content-Type: text/html; charset=UTF-8"
     print
@@ -99,7 +104,7 @@ def main():
         source = fetch(url)
         title = feed_title(source) or '(name of blog)'
         print RESULT.format(url=cgi.escape(url), title=cgi.escape(title),
-                            source=cgi.escape(source))
+                            source=cgi.escape(pretty_print(source)))
 
 
 if __name__ == '__main__':
