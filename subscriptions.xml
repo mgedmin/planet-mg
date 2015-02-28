@@ -254,9 +254,11 @@
                 xmlUrl="http://rachelbythebay.com/w/atom.xml" htmlUrl="http://rachelbythebay.com/w/"/>
             <outline text="Revealing Errors" title="Revealing Errors"
                 type="rss" xmlUrl="http://revealingerrors.com/feed/atom" htmlUrl="http://revealingerrors.com/"/>
+            <!-- ugh, somebody think of the horrible men's burned waaah
             <outline text="Shtetl-Optimized" title="Shtetl-Optimized"
                 type="rss"
                 xmlUrl="http://www.scottaaronson.com/blog/?feed=rss2" htmlUrl="http://www.scottaaronson.com/blog"/>
+                -->
             <outline text="sysadvent" title="sysadvent" type="rss"
                 xmlUrl="http://sysadvent.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://sysadvent.blogspot.com/"/>
             <outline text="The Endeavour" title="The Endeavour"
