@@ -8,7 +8,7 @@
       <xsl:apply-templates select="@*|node()"/>
       <br />
       <span class="alttextwrapper" onclick="$('.alttext', this).toggle()">
-        Alt text<span class="alttext" style="display: none">:
+        Alt text<span class="alttext">:
           <xsl:value-of select="@alt"/>
         </span>
       </span>
